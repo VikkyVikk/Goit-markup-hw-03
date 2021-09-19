@@ -1,0 +1,353 @@
+ *,
+ *::before,
+ *::after {
+     box-sizing: border-box;
+ }
+ 
+ :root {
+     --main-light-color: #FFFFFF;
+     /*основной цвет на сайте*/
+     --main-dark-color: #212121;
+     /* основной цвет на сайте*/
+     --main-grey-color: #757575;
+     /*используется в текстовых описаниях профессий и деятельности*/
+     --logo-dark-color: #000000;
+     /*цвет лого подвала в спане*/
+     --contact-color: rgba(255, 255, 255, 0.6);
+     /* для телефона и почты подвала*/
+     --active-link-color: #2196f3;
+     /* кнопка, ссылка при нажатии, лого*/
+     --background-dark-color: #2F303A;
+     /* фон героя и подвала*/
+     --background-light-color: #F5F4FA;
+     /* фон блока "наша команда"*/
+ }
+ /*Общее оформление*/
+ 
+ body {
+     font-family: Roboto, sans-serif;
+     color: var(--main-dark-color);
+     background-color: var(--main-light-color);
+     letter-spacing: 0.03em;
+ }
+ /* Общее оформление картинок*/
+ 
+ img {
+     display: block;
+     max-width: 100%;
+     height: auto;
+ }
+ /* Убрать маркеры */
+ 
+ button {
+     cursor: pointer;
+     border: none;
+ }
+ 
+ .list {
+     list-style-type: none;
+ }
+ /*Спрятать заголовок*/
+ 
+ .offscreen {
+     position: absolute;
+     clip: rect(1px, 1px, 1px, 1px);
+     padding: 0;
+     border: 0;
+     height: 1px;
+     width: 1px;
+     overflow: hidden;
+ }
+ 
+ .current:visited {
+     color: var( --active-link-color);
+ }
+ 
+ .filters .current:visited {
+     color: var(--main-light-color);
+     background-color: var(--active-link-color);
+ }
+ /* header */
+ 
+ .header {
+     background: var(--main-light-color);
+ }
+ /* WebStudio */
+ 
+ .logo {
+     width: 145px;
+     height: 31px;
+     font-family: Raleway;
+     font-style: normal;
+     font-weight: bold;
+     font-size: 26px;
+     line-height: 1.2;
+     letter-spacing: 0.03em;
+     color: var(--active-link-color);
+     text-decoration: none;
+ }
+ 
+ .logo:hover,
+ .logo:focus {
+     color: var(--logo-dark-color);
+ }
+ 
+ .logo:active {
+     color: var(--active-link-color);
+ }
+ /*Логотип СТУДИО*/
+ 
+ .logstudio {
+     color: var(--logo-dark-color);
+     font-family: Raleway;
+     font-style: normal;
+     font-weight: bold;
+     font-size: 26px;
+     line-height: 1.2;
+     letter-spacing: 0.03em;
+     text-decoration: none;
+ }
+ 
+ .logstudio:hover,
+ .logstudio:focus {
+     color: var(--active-link-color);
+ }
+ 
+ .logstudio:active {
+     color: var(--logo-dark-color);
+ }
+ /* НАВИГАЦИЯ КОНТАКТЫ */
+ /* Cсылки при нажатии меняют цвет*/
+ 
+ .nav-link a {
+     color: var( --main-dark-color);
+     font-weight: 500;
+     font-size: 14px;
+     line-height: 1.14;
+     letter-spacing: 0.02em;
+     text-decoration: none;
+ }
+ 
+ .nav-link a:hover,
+ .nav-link a:focus {
+     color: var(--active-link-color)
+ }
+ 
+ .nav-link a:active {
+     color: var(--main-dark-color);
+ }
+ /* E-mail Tel*/
+ 
+ .contact-link a {
+     color: var( --main-grey-color);
+     text-decoration: none;
+     font-weight: 500;
+     font-size: 14px;
+     line-height: 1.14;
+     letter-spacing: 0.02em;
+ }
+ 
+ .contact-link a:hover,
+ .contact-link a:focus {
+     color: var(--active-link-color);
+ }
+ 
+ .contac-link a:active {
+     color: var(--active-link-color);
+ }
+ /*ШАПКА заказать услугу*/
+ 
+ .hero {
+     background: var(--background-dark-color);
+ }
+ /* Эффективные решения для вашего бизнеса */
+ 
+ .hero-text {
+     font-weight: 900;
+     font-size: 44px;
+     line-height: 1.36;
+     text-align: center;
+     letter-spacing: 0.06em;
+     text-transform: uppercase;
+     color: var(--main-light-color);
+ }
+ /*Кнопка заказать услугу*/
+ 
+ .hero-button {
+     background: var(--active-link-color);
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+     border-radius: 4px;
+     font-family: Roboto;
+     font-style: normal;
+     font-weight: bold;
+     font-size: 16px;
+     line-height: 1.87;
+     display: flex;
+     align-items: center;
+     text-align: center;
+     letter-spacing: 0.06em;
+     color: var(--main-light-color);
+ }
+ /*-- Особенности --*/
+ 
+ .section-properties h3 {
+     font-weight: bold;
+     font-size: 14px;
+     line-height: 1.14;
+     text-transform: uppercase;
+     color: var( --main-dark-color);
+ }
+ 
+ .section-properties p {
+     font-weight: normal;
+     font-size: 14px;
+     line-height: 1.7;
+     color: var( --main-grey-color);
+ }
+ /*Чем мы занимаемся*/
+ 
+ .employment h2 {
+     font-weight: bold;
+     font-size: 36px;
+     line-height: 1.7;
+     text-align: center;
+     color: var( --main-dark-color);
+ }
+ 
+ .employment img {
+     width: 370px;
+     height: 294px;
+     padding: 2px;
+ }
+ /* Наша команда*/
+ 
+ .team-section {
+     background: var(--background-light-color);
+ }
+ 
+ .team-section h2 {
+     font-weight: bold;
+     font-size: 36px;
+     line-height: 1.17;
+     text-align: center;
+     color: var( --main-dark-color);
+ }
+ 
+ .team-section h3 {
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 1.19;
+     text-align: center;
+     color: var( --main-dark-color);
+ }
+ 
+ .team-section p {
+     font-weight: normal;
+     font-size: 16px;
+     line-height: 1.19;
+     text-align: center;
+     color: var( --main-grey-color);
+ }
+ /* ВТОРАЯ СТРАНИЦА*/
+ /* ФИЛЬТРЫ 2-я страница */
+ 
+ .filter-button:hover,
+ .filter-button:focus {
+     color: var(--main-light-color);
+     background: var(--active-link-color);
+     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+     border-radius: 4px;
+ }
+ 
+ .filter-button:active {
+     color: var(--main-light-color);
+ }
+ 
+ .filter-button {
+     background: var(--background-light-color);
+     font-family: Roboto;
+     font-style: normal;
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 1.62;
+     text-align: center;
+     letter-spacing: 0.03em;
+     color: var( --main-dark-color);
+ }
+ /* ПРОЕКТЫ 2-я страница  */
+ 
+ .project section {
+     background: var(--main-light-color);
+     border: 1px solid var(--main-light-color);
+     box-sizing: border-box;
+ }
+ 
+ .container {
+     text-decoration: none;
+ }
+ 
+ .project-name {
+     font-weight: bold;
+     font-size: 18px;
+     line-height: 2;
+     letter-spacing: 0.06em;
+     color: var( --main-dark-color);
+ }
+ 
+ .project-properties {
+     font-weight: normal;
+     font-size: 16px;
+     line-height: 1.87;
+     color: var( --main-grey-color);
+ }
+ /*ОБЩИЙ ПОДВАЛ*/
+ /* Footer*/
+ 
+ .footerbg {
+     background: var(--background-dark-color);
+ }
+ 
+ .address-footer a {
+     font-style: normal;
+     font-weight: normal;
+     font-size: 14px;
+     line-height: 1.7;
+     letter-spacing: 0.03em;
+     text-decoration: none;
+ }
+ 
+ .address-footer a:hover,
+ .address-footer a:focus {
+     color: var(--active-link-color);
+ }
+ 
+ .address-footer a:active {
+     color: var(--main-light-color);
+ }
+ 
+ .logstudio-footer:hover,
+ .logstudio-footer:focus {
+     color: var(--active-link-color);
+ }
+ 
+ .logstudio-footer:active {
+     color: var(--main-light-color);
+ }
+ 
+ .logstudio-footer,
+ .contact-footer-adress {
+     color: var(--main-light-color);
+ }
+ 
+ .logstudio-footer {
+     font-family: Raleway;
+     font-style: normal;
+     font-weight: bold;
+     font-size: 26px;
+     line-height: 1.19;
+     letter-spacing: 0.03em;
+ }
+ 
+ .contact-footer {
+     color: var(--contact-color);
+ }
