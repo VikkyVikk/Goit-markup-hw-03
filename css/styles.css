@@ -58,6 +58,17 @@
         border: none;
     }
     
+    .visually-hidden {
+        position: absolute !important;
+        clip: rect(1px 1px 1px 1px);
+        clip: rect(1px, 1px, 1px, 1px);
+        padding: 0 !important;
+        border: 0 !important;
+        height: 1px !important;
+        width: 1px !important;
+        overflow: hidden;
+    }
+    
     .list {
         list-style-type: none;
     }
@@ -87,11 +98,13 @@
     }
     
     .offscreen {
+        position: absolute !important;
+        clip: rect(1px 1px 1px 1px);
         clip: rect(1px, 1px, 1px, 1px);
-        padding: 0;
-        border: 0;
-        height: 1px;
-        width: 1px;
+        padding: 0 !important;
+        border: 0 !important;
+        height: 1px !important;
+        width: 1px !important;
         overflow: hidden;
     }
     /* Посещение страницы*/
@@ -101,17 +114,13 @@
         background-color: var(--active-link-color);
     }
     
-    .current:visited {
+    .nav-item .current {
         color: var( --active-link-color);
     }
     
     .filters-block .current:visited {
         color: var(--main-light-color);
         background-color: var(--active-link-color);
-    }
-    
-    .current {
-        color: var( --active-link-color);
     }
     
     .filters-block .current {
